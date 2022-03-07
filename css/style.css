@@ -1,0 +1,254 @@
+html {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: in;
+}
+
+body {
+    font-size: 62.5%;
+    font-family: 'Work San', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+/* General setting */
+a,
+ul {
+    text-decoration: none;
+    list-style: none;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: lighter;
+}
+
+/* Section Container */
+.container {
+    max-width: 124.0rem;
+    margin: 0 auto;
+    padding: 0 3rem;
+}
+
+/* Hero section */
+/* .hero{
+    display: flex;
+    flex-direction: column;
+} */
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* padding: 1.5rem 0;
+    box-shadow: 
+    rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, 
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px; */
+}
+
+.logo {
+    font-size: 2.5rem;
+    font-weight: lighter;
+    color: #4e4e4f;
+    cursor: pointer;
+}
+
+.logo span {
+    color: #663399;
+    font-size: 1.5rem;
+}
+
+.main-nav {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    gap: 4.8rem;
+}
+
+/* .main-nav_item:not(last:child) {
+    padding-right: 1.5rem; //not usefull set to gap: 4.8rem
+} 
+
+.main-nav_item:last-child {
+    padding-right: 0;
+}
+*/
+/* copy start */
+
+.main-nav_item:link,
+.main-nav_item:visited {
+    padding: .2rem .5rem;
+    border-radius: 5px solid #333;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.2s;
+}
+
+.main-nav-item:hover,
+.main-nav-item:active {
+  color: #cf711f;
+}
+/* copy end */
+
+
+.close-btn {
+    display: none;
+}
+
+/* content box */
+.hero-content {
+    display: flex;
+    margin: 3rem 0;
+}
+
+.hero-content div {
+    align-self: center;
+    justify-items: flex-start;
+    max-width: 25rem;
+    margin: 0 auto;
+}
+
+.hero-box {
+    max-width: 20rem;
+    margin-right: 18rem;
+}
+
+.hero-heading_title {
+    text-align: center;
+}
+
+.hero-heading_text {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.21rem;
+    word-spacing: 0.1rem;
+    margin: 1.6rem 0;
+}
+
+.image {
+    width: 100%;
+    border-radius: 100%;
+    opacity: .7;
+}
+
+/* section skills category */
+
+.skills-category {
+    background-color: #ab87d2;
+}
+
+.category-box {
+
+    font-weight: 200;
+    color: #433f3f;
+}
+
+.skills-title {
+    text-align: center;
+    /* margin: 1.5rem 0; */
+    font-weight: 200;
+    font-size: 4rem;
+}
+
+.skills-box {
+    display: flex;
+    justify-content: center;
+}
+
+.skill-list {
+    margin: 3rem;
+    font-size: 2rem;
+}
+
+.skill-items:last-child {
+    margin-top: 2rem;
+}
+
+
+
+/* View Port */
+/* 1062 screen size */
+@media screen and (max-width: 1061px) {
+ .skill-list{
+     font-size: 1.8rem;
+ }   
+}
+
+/* 995 screen size */
+@media screen and (max-width: 995px) {
+    .skill-list{
+        font-size: 1.5rem;
+    }  
+}
+
+/* 899 screen size */
+@media screen and (max-width: 899px) {
+    .skills-box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .skill-list{
+        margin: 1rem;
+        gap: 1rem;
+        font-size: 2rem;
+    }
+    .skill-items:last-child{
+        margin-top: 1rem;
+    }
+}
+
+/* 795 screen size */
+@media screen and (max-width: 795px) {
+    .hero-content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+      
+}
+
+/* 582 screen size */
+@media screen and (max-width: 662px) {
+    .header{
+        display: flex;
+        flex-direction: column;
+    }
+    .sm-screen{
+        margin-top: 1.5rem;
+    font-size: 1rem;
+    }
+
+    .close-btn {        
+        display: inline-block;
+        border: .1rem;
+        font-size: 1.4rem;
+        margin-right: 1rem;
+        cursor: pointer
+    }
+}
+
+/* 536 screen size */
+@media  screen and (max-width: 536px) {
+    .sm-screen{
+        font-size: .9rem;
+        gap: 3rem;
+    }
+}
+
+/* 561 screen size*/
+@media  screen and (max-width: 560px) {
+    .main-nav{
+        gap: 3rem;
+    }
+    .sm-screen{
+        font-size: .9rem;
+    }
+}
